@@ -4,6 +4,7 @@
 * 玩手机
 * 写代码
 
+这是一个超链接[百度](https://www.baidu.com)
 有自学过python html css js 
 用Markdown试下代码编辑:
 
