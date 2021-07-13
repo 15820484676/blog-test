@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <style>
+      /* 红色 #FF0000 
+        橙色 #FF7F00
+        黄色 #FFFF00 
+        绿色 #00FF00 
+        青色 #00FFFF 
+        蓝色 #0000FF
+        紫色 #8B00FF */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: white;
+      }
+      .rainbow div {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .rainbow {
+        /* border: 1px solid red; */
+        height: 300px;
+        width: 600px;
+        overflow: hidden;
+        margin: 0px auto;
+      }
+      .rainbow > div {
+        /* border: 1px solid red; */
+        width: 600px;
+        height: 600px;
+        background: red;
+      }
+
+      .rainbow > div > div {
+        /* border: 1px solid #FF7F00; */
+        width: 580px;
+        height: 580px;
+        background: #ff7f00;
+        margin: 10px;
+      }
+
+      .rainbow > div > div > div {
+        /* border: 1px solid #FFFF00; */
+        width: 560px;
+        height: 560px;
+        background: #ffff00;
+        margin: 10px;
+      }
+      .rainbow > div > div > div > div {
+        /* border: 1px solid #00FF00; */
+        width: 540px;
+        height: 540px;
+        background: #00ff00;
+        margin: 10px;
+      }
+      .rainbow > div > div > div > div > div {
+        /* border: 1px solid #00FFFF; */
+        width: 520px;
+        height: 520px;
+        background: #00ffff;
+        margin: 10px;
+      }
+      .rainbow > div > div > div > div > div > div {
+        /* border: 1px solid #0000FF; */
+        width: 500px;
+        height: 500px;
+        background: #0000ff;
+        margin: 10px;
+      }
+      .rainbow > div > div > div > div > div > div > div {
+        /* border: 1px solid #8B00FF; */
+        width: 480px;
+        height: 480px;
+        background: #8b00ff;
+        margin: 10px;
+      }
+      .rainbow > div > div > div > div > div > div > div > div {
+        /* border: 1px solid white; */
+        width: 460px;
+        height: 460px;
+        background: white;
+        margin: 10px;
+      }
+    </style>
+    <title>rainbow</title>
+  </head>
+  <body>
+    <div class="rainbow">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div><div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
