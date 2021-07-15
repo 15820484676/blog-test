@@ -92,5 +92,23 @@ align-self 单独让某一个item的次轴对齐方式
 * Figma
 * 墨刀
 
+## Grid布局
 
+给容器加上display:grid  
+* grid-template-columns 定义有几列和列的宽度
+* grid-template-rows 定义有几行和行的高度
+* grid-row-start grid-row-end grid-column-start grid-column-end给item元素设置范围
+* grid-grap 中间的空隙
+* grid-column-grap grid-row-grap列空隙和行空隙
+* grid-template-areas 分区，可以用文字直接诶描述出布局
+```html
+grid-template-areas:
+    "header header header"
+    "aside main ad"
+    "footer footer footer"
+
+再在item上加上  
+grid-area:header....等等 直接就可以快速布局
+```
+* 属性太多，用的时候查
 
