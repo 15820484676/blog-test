@@ -49,5 +49,42 @@ demo{
 ## transition 过渡
 * transition :all 1s 从快到慢  
 * transition :all 1s linear 线性，匀速的
-* 过渡方式很多MDN查看属性用法
+* transition:属性名 时长 过渡方式 延迟 
+* 如果有多个动画可以使用setTimeout来实现
+### 不是所有属性都能过渡
+* display:none =>block,一般用visiblity:hidden=>visible
+### display和visibility的区别
 
+## 动画 animation
+两种写法，百分号写的广泛点：  
+
+  ```html
+  @keyframes aaa {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: translateX(200px);
+        }
+        100% {
+          transform: translateY(200px, 200px);
+        }
+      }
+
+    @keyframes bbb {
+        from {
+          transform: translateX(200px);
+        }
+        to {
+          transform: translate(200px, 200px);
+        }
+      }
+ ```
+* animation:时长 过渡方式 延迟 次数 方向 填充模式 是否暂停 动画名 
+* 时长：1s 
+* 过渡方式：linear  ease ease-in ease-out ease-in-out
+* 延迟：时间
+* 次数：1 2 3  或者 infinite(无限循环)
+* 方向：reverse alternate alternate=reverse 反方向 交替 。。
+* 填充模式： none forwards backwards both  
+* 是否暂停：paused running 动画暂停 运行 
