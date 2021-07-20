@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .heart {
+        /* border: 1px solid red; */
+        display: inline-flex;
+        margin: 250px 0px 0px 250px;
+        transition: all 0.5s ease-out;
+      }
+      .heart:hover {
+        transform: scale(1.5);
+      }
+      .heart > .left {
+        /* border: 1px solid green; */
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        transform: translate(120px, -80px);
+        background-color: red;
+      }
+      .heart > .bottom {
+        /* border: 1px solid green; */
+        width: 200px;
+        height: 200px;
+        transform: rotate(45deg);
+        background-color: red;
+      }
+      .heart > .right {
+        /* border: 1px solid green; */
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        transform: translate(-120px, -80px);
+        background-color: red;
+      }
+      /* animation实现 */
+      .heart2 {
+        /* border: 1px solid red; */
+        display: inline-flex;
+        margin: 250px 0px 0px 250px;
+        /* transition: all 0.5s ease-out; */
+        animation: heart 0.8s infinite;
+      }
+      @keyframes heart {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .heart2 > .left2 {
+        /* border: 1px solid green; */
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        transform: translate(120px, -80px);
+        background-color: red;
+      }
+      .heart2 > .bottom2 {
+        /* border: 1px solid green; */
+        width: 200px;
+        height: 200px;
+        transform: rotate(45deg);
+        background-color: red;
+      }
+      .heart2 > .right2 {
+        /* border: 1px solid green; */
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        transform: translate(-120px, -80px);
+        background-color: red;
+      }
+    </style>
+    <title>Heart</title>
+  </head>
+  <body>
+    <div class="heart">
+      <div class="left"></div>
+      <div class="bottom"></div>
+      <div class="right"></div>
+    </div>
+    <div class="heart2">
+      <div class="left2"></div>
+      <div class="bottom2"></div>
+      <div class="right2"></div>
+    </div>
+  </body>
+</html>

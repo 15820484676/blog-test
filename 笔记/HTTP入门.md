@@ -30,3 +30,36 @@
 * curl -v http://baidu.com连接详细信息 
 * 先进行TCP连接，连接后才发送HTTP请求
 
+## 如何发请求
+* curl命令
+* chrome直接访问
+
+## 如何做出一个响应
+* 使用node.js编写服务端代码
+* node server 监听端口
+* 设置响应状态码： response.statusCode=200
+* 设置响应头：response.setHeader('Content-Type:text/html')
+* 设置响应体：response.write('内容')，可以追加内容
+* console.log()进行调试
+
+## HTTP基础概念
+* 请求
+请求动词  路径加查询参数 协议名/版本
+Host:域名或IP
+Accept:text/html
+Content-Type:请求体的格式
+回车
+请求体
+
+* 响应
+协议名/版本 状态码 状态字符串  
+Conent-Type:响应体的格式  
+回车  
+响应体  
+
+* 常见状态码
+
+## 用CURL构造请求
+curl  -v -X POST -d 'text=3333' -H 'Accept: text/html'
+
+## 云服务器
