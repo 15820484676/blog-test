@@ -251,14 +251,6 @@ box-sizing: border-box; 边框盒模型
 
 * fixed：生成固定定位元素，相对于浏览器窗口(viewport)的定位。通常配合z-index一起来使用。像网页上的右下角的回到顶部按钮一般就是fixed定位
 
-## 浏览器渲染原理
-
-1. 浏览器会将HTML解析成一个DOM树，DOM 树的构建过程是一个深度遍历过程：当前节点的所有子节点都构建好后才会去构建当前节点的下一个兄弟节。
-2. 将CSS解析成 CSS Rule Tree
-3. 根据DOM树和CSSOM来构造 Rendering Tree。注意：Rendering Tree 渲染树并不等同于 DOM 树，因为一些像Header或display:none的东西就没必要放在渲染树中了
-4. (Layout)有了Render Tree，浏览器已经能知道网页中有哪些节点、各个节点的CSS定义以及他们的从属关系。下一步操作称之为layout，顾名思义就是计算出每个节点在屏幕中的位置
-5. (Paint)再下一步就是绘制，即遍历render树，并使用UI后端层绘制每个节点
-6. (Compose)合成，根据层叠关系展示画面
 
 
 ### animation 动画
@@ -282,3 +274,12 @@ animation是通过关键帧@keyframes来实现更为复杂的动画效果。 每
 4. animation-delay: 规定在动画开始之前的延迟时间，以秒或毫秒计(1s 或1000ms)(默认值为0)
 5. animation-iteration-count: 规定动画应该播放的次数。(默认值为1)取值有：n | infinite(无限次播放，像loadding动画就用了这个) 
 6. animation-direction: 规定是否应该轮流反向播放动画。(默认值为normal) 取值有：normal|reverse|alternate|alternate-reverse|initial|inherit
+
+## 浏览器渲染原理
+
+1. 浏览器会将HTML解析成一个DOM树，DOM 树的构建过程是一个深度遍历过程：当前节点的所有子节点都构建好后才会去构建当前节点的下一个兄弟节。
+2. 将CSS解析成 CSS Rule Tree
+3. 根据DOM树和CSSOM来构造 Rendering Tree。注意：Rendering Tree 渲染树并不等同于 DOM 树，因为一些像Header或display:none的东西就没必要放在渲染树中了
+4. (Layout)有了Render Tree，浏览器已经能知道网页中有哪些节点、各个节点的CSS定义以及他们的从属关系。下一步操作称之为layout，顾名思义就是计算出每个节点在屏幕中的位置
+5. (Paint)再下一步就是绘制，即遍历render树，并使用UI后端层绘制每个节点
+6. (Compose)合成，根据层叠关系展示画面
