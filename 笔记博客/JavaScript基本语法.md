@@ -27,7 +27,7 @@ var b = add(1,2);
 ```javascript
 {
     let a = 1;
-    let b = 2;****
+    let b = 2;
 }
 ```
 
