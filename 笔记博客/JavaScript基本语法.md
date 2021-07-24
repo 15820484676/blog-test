@@ -86,7 +86,7 @@ while (i < 10>){
 1. while (true){}死循环
 2. 初始化 判断 循环体 增长 一个不写就死循环
 
-## for循环
+## for循环 break continue
 ```javascript
 for (语句1;表达式2;语句3){
     循环体
@@ -94,6 +94,7 @@ for (语句1;表达式2;语句3){
 ```
 1. break 跳出离他最近的循环
 2. continue 跳出本次循环，进入下一次循环
+3. 语句1 表达式2 语句3 循环体都可以不写(有什么意义呢？)
 
 ## label
 ```javascript
