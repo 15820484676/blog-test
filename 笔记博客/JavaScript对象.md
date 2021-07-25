@@ -54,7 +54,7 @@ delete obj.name
 * obj['key']   obj.key obj[key] 中括号语法，点语法，中括号里面是变量先求值 
 * Object.keys(obj) 查看对象的所有属性名
 * console.dir(obj) 查看自身和共有属性
-* obj.__proto__ 查看共有的属性
+* obj.\__proto__ 查看共有的属性
 * <font color=#00ffff size=3>obj.hasOwnProperty('toString') 是判断一个属性是否为自身的属性</font>
 * <font color=#00ffff size=3>'name' in obj 是判断一个对象是否有某个属性（不能区分是自身的还是原型的）</font>
 * Object.values(obj) 查看对象的所有属性值
@@ -66,8 +66,6 @@ delete obj.name
 * obj['name'] = 'peter'
 * Object.assign(obj,{p1:1,p2:2})给Obj对象批量赋值
 * 无法通过自己新增或修改原型的属性
-```javascript
- obj.__proto__.toString = 'xxx' 可以通过__proto__修改原型属性，*不推荐用__proto__*
-```
+* obj.\__proto__.toString = 'xxx' 可以通过__proto__修改原型属性，*不推荐用__proto__*
 * 要修改原型属性就用 ：window.Object.prototype
 * let obj = Object.create(obj2) 以某个对象为原型创建对象
