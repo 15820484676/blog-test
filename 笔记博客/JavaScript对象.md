@@ -55,7 +55,8 @@ delete obj.name
 * Object.keys(obj) 查看对象的所有属性名
 * console.dir(obj) 查看自身和共有属性
 * obj.__proto__ 查看共有的属性
-* obj.hasOwnProperty('toString') 判断一个属性是否为自身的属性
+* <font color=#00ffff size=3>obj.hasOwnProperty('toString') 是判断一个属性是否为自身的属性</font>
+* <font color=#00ffff size=3>'name' in obj 是判断一个对象是否有某个属性（不能区分是自身的还是原型的）</font>
 * Object.values(obj) 查看对象的所有属性值
 * Object.entries(obj) 把对象的属性组成一个二维数组
 
