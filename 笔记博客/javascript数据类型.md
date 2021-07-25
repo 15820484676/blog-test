@@ -26,4 +26,15 @@
 * 数字number 字符串string 布尔bool 符号 symbol 空undefined 空null obiect 对象 
 * 四基两空一布尔
 
-### bool
+### 数字 
+* 整数 1
+* 小数 0.1
+* 科学计数法 1.23e4
+* 八进制 0123 00123 0o123
+* 十六进制 0x3F
+* 二进制 0101
+* 正0和负0 都等于0
+* 无穷大 lnfinity +lnfinity -lnfinity
+* NaN Not a Number 无法表示的数字，但是还是一个数字
+
+## 
