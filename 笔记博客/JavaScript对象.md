@@ -35,7 +35,7 @@ let obj = {[a]:1}
 * 这个属性存储着共有属性组成的对象的地址(也叫原型的地址)，这个共有属性组成的对象就叫做*原型*
 * *所有对象原型的原型值为null*
 
-### 对象属性的删除
+### 删除对象的属性
 * 删除属性名和值、删除属性值
 ```javascript
 删除属性值
@@ -66,5 +66,5 @@ delete obj.name
 * Object.assign(obj,{p1:1,p2:2})给Obj对象批量赋值
 * 无法通过自己新增或修改原型的属性
 * obj.__proto__.toString = 'xxx'可以通过__proto__修改原型属性，*不推荐用__proto__*
-* 要修改就用window.Object.prototype
+* 要修改原型属性就用 ：window.Object.prototype
 * let obj = Object.create(obj2) 以某个对象为原型创建对象
