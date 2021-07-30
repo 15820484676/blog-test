@@ -96,7 +96,7 @@ function fn(){
 
 如何传this?
 * 使用fn.call()
-* fn.call(1,2,3,4) 1就是this,2,3,4是arguments
+* fn.call(1,2,3,4) 1就是this,   (2,3,4)是arguments
 * 如果传的不是对象，js会自动转成对象
 * 可以在声明函数的时候加 use strict 来让它不要加东西，那么传的是什么this就是什么
 * js在每个函数里加了this
