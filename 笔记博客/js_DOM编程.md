@@ -47,3 +47,5 @@
 * div1.setAttribute('data-x','test') 添加自定义属性
 * div1.getAttribute('data-x')
 * div1.dataset.x = 'update'也可以
+  
+查找节点
